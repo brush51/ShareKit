@@ -183,9 +183,11 @@ BOOL SHKinit;
 		{
 			self.isDismissingView = YES;
 			[[currentView parentViewController] dismissModalViewControllerAnimated:animated];
-		}
-		
-		else
+		} else if ([currentView presentingViewController] != nil) {
+			//this part fixes the issue with "dismiss view" does not work
+            		self.isDismissingView = YES;
+            		[[currentView presentingViewController] dismissModalViewControllerAnimated:animated];
+		} else
 			self.currentView = nil;
 	}
 }
