@@ -2,7 +2,6 @@
 
 
 
-
 // PLEASE SEE INSTALL/CONFIG INSTRUCTIONS:
 // http://getsharekit.com/install
 
@@ -36,6 +35,12 @@
  leaving that decision up to the user.
  */
 
+
+// Evernote - http://www.evernote.com/about/developer/api/
+#define SHKEvernoteUserStoreURL     @""
+#define SHKEvernoteSecretKey        @""
+#define SHKEvernoteConsumerKey      @""
+#define SHKEvernoteNetStoreURLBase  @""
 
 
 // Delicious - https://developer.apps.yahoo.com/projects
